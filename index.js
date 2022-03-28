@@ -1,1 +1,3 @@
-console.log('hello...');
+import displayDate from './modules/displayDate.js';
+
+displayDate();
