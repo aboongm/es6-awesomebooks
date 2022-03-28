@@ -14,12 +14,12 @@ const uploadContent = () => {
   });
 };
 
-function checkLocalStorage() {
+const checkLocalStorage = () => {
   if (JSON.parse(localStorage.getItem('BOOKS_LIST')) != null) {
     books.BooksObject = JSON.parse(localStorage.getItem('BOOKS_LIST'));
     uploadContent();
   }
-}
+};
 
 const addBook = () => {
   books.add(Elements.book, Elements.author);
